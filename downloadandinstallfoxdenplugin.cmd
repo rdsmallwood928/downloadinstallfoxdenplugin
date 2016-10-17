@@ -9,7 +9,7 @@ echo BinStream.Open(); >> wget.js
 echo BinStream.Write(WinHttpReq.ResponseBody); >> wget.js
 echo BinStream.SaveToFile("out.msi"); >> wget.js
 
-cscript wget.js https://alpha.foxden.io/plugins/foxden/fdaudiovideoplugin.msi
+cscript wget.js "%1/plugins/foxden/fdaudiovideoplugin.msi"
 
 msiexec /i out.msi /quiet /qn /norestart
 
